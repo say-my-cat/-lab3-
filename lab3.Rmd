@@ -48,6 +48,11 @@
 8. cloos.de 
 9. sunrom.com
 10. strobotics.com
+11. pricesystems.com
+12. softstarsystems.com
+13. distributive.com
+14. softwaremetrics.com
+15. propricer.com
 
 ## Содержание лабораторной работы:
 
@@ -157,7 +162,7 @@ get_sum_df <- function(company_url) {
  
 }
  
-urls <- c("ericom.com","comforte.com","vypress.com","robotiq.com","parallax.com","2020e.com","flexicell.com","cloos.de","sunrom.com","strobotics.com")  
+urls <- c("ericom.com","comforte.com","vypress.com","robotiq.com","parallax.com","2020e.com","flexicell.com","cloos.de","sunrom.com","strobotics.com", "pricesystems.com", "softstarsystems.com", "distributive.com", "softwaremetrics.com", "propricer.com")  
 
 dfs <- lapply(urls, get_sum_df) 
 result <- bind_cols(dfs) 
@@ -191,6 +196,11 @@ rappalyze("flexicell.com")
 rappalyze("cloos.de")
 rappalyze("sunrom.com")
 rappalyze("strobotics.com")
+rappalyze("pricesystems.com")
+rappalyze("softstarsystems.com")
+rappalyze("distributive.com")
+rappalyze("softwaremetrics.com")
+rappalyze("propricer.com")
 ```
 ## Выводы
 В результате выполнения задачи, нами было получено достаточно универсальное решение по сбору информации о доменах. Разработанные средства поиска и сбора информации найдут свое применение в ходе дальнейшего изучения курса.
